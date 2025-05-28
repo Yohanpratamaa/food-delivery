@@ -32,7 +32,7 @@ const Onboarding = () => {
 
         {/* Button */}
         <button
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/home")}
           className="mt-[3rem] bg-orange-500 text-white w-full h-14 px-6 py-2 rounded-lg shadow-md hover:bg-orange-600 transition duration-300 font-bold"
         >
           NEXT

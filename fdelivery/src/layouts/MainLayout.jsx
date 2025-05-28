@@ -1,10 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const MainLayout = ({ children }) => {
-  return <div><Link to="/onboarding">{children}</Link></div>;
+const MainLayout = () => {
+  return (
+    <div>
+      <Navbar></Navbar>
+      <main><Outlet/></main>
+      <Footer></Footer>
+    </div>
+  );
 };
 
 export default MainLayout;
